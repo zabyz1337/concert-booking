@@ -1,16 +1,47 @@
-# React + Vite
+1. Создание нового React проекта
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Откройте терминал и создайте новый проект React с помощью Create React App, используя команду npx create-react-app имя-проекта.
 
-Currently, two official plugins are available:
+Перейдите в директорию проекта cd имя-проекта.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+2. Настройка Eslint
 
-## React Compiler
+Инициализируйте ESLint в проекте, чтобы создать конфигурационный файл .eslint.config.mjs . В терминале выполните: npx eslint --init
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+3. Создание структуры проекта
 
-## Expanding the ESLint configuration
+Внутри папки src, создайте подпапку components, где будут храниться все компоненты приложения.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+В папке components создайте файлы для каждого компонента: EventDetails.js, SeatSelector.js и EventBooking.js.
+
+4. Разработка компонентов
+
+EventDetails компонент: Этот компонент отвечает за отображение информации о событии, такой как название, дата и место проведения.
+
+SeatSelector компонент: Разработайте компонент для выбора мест. Компонент должен позволять пользователю выбирать места из списка доступных мест.
+
+EventBooking компонент: Это родительский компонент, который будет интегрировать EventDetails и SeatSelector. Управляет состоянием выбранных мест и передает нужные данные дочерним компонентам.
+
+5. Интеграция компонентов
+
+Интегрируйте компоненты в App.js, который является главным компонентом приложения.
+
+Убедитесь, что компоненты правильно принимают props и обрабатывают состояния.
+
+6. Добавление стилей
+
+Добавьте стили для компонентов при помощи CSS.
+
+7. Тестирование приложения
+
+Запустите приложение с помощью команды npm start.
+
+Проверьте работу интерфейса: добавление мест, их выбор и удаление, а также корректность отображения информации о событии.
+
+8. Оптимизация и отладка
+
+Используйте React Dev Tools для мониторинга и отладки состояний и ререндеров компонентов.
+
+Устраните возможные проблемы производительности и ошибки в логике приложения.
+
+Убедитесь, что Eslint не находит ошибок в коде.
