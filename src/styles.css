@@ -42,3 +42,34 @@ body {
   margin: 10px 0;
   font-weight: 600;
 }
+
+.seatSelector {
+  margin-top: 34px;
+}
+
+.seatGrid {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+  margin: 16px 0 22px;
+}
+
+.seatBtn {
+  min-width: 58px;
+  height: 38px;
+  border-radius: 6px;
+  border: 2px solid rgba(0, 0, 0, 0.45);
+  background: #cfcfcf;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.seatBtn.selected {
+  background: #8fd0a0;
+}
+
+.selectedText {
+  font-size: 28px;
+  color: #0b43ff;
+  font-weight: 700;
+}
